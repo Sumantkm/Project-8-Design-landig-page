@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+body{
+   max-width: 1780px;
+   margin: 0 auto;
+}
+
+/* ---------------main-div---------------- */
+div.main-div{
+    background-image: url("../images/backcover.svg" );
+    background-size: auto;
+    background-position: right ;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+
+nav img{
+    margin-left: 30px;
+}
+
+nav div.nav-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    font-size: 25px;
+    color: #2f2f6b;
+    cursor: pointer;
+}
+
+button.signin-btn{
+    width: 120px;
+    padding: 10px 0;
+    background: linear-gradient(to right, #8b4af5, #fa7ad4);
+    margin-right: 30px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* ----------intro-section---------- */
+
+div.intro-section{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.intro-section div.left-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 40px;
+   
+}
+
+div.intro-section div.left-section h1{
+    font-size: 120px;
+    color: #444497;
+}
+
+div.intro-section div.left-section h4{
+margin-top: 50px ;
+width: 400px;
+font-size: 20px;
+line-height: 35px;
+color: #7c7ca7;
+}
+
+div.intro-section div.left-section button.learn-more-btn{
+    width: 300px;
+    margin-top: 50px;
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(to right, #8b4af5, #fa7ad4) ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+div.imgs-div{
+    position: relative;
+}
+
+.intro-section .imgs-div img:nth-child(3){
+    position: absolute;
+    width: 800px;
+    left: 0;
+}
+
+.intro-section .imgs-div img.vector-dot{
+   position: absolute;
+   bottom: 0;
+   left: 15px;
+   width: 30px;
+}
+
+.intro-section .imgs-div img.vector-img{
+    position: absolute;
+    bottom: -130px;
+    width: 150px;
+    left: -80px;
+}
+
+
+@media only screen and (max-width: 850px) {
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        height: 20vh;
+        overflow-x: auto;
+    }
+
+    nav div.nav-items{
+        display: none;
+    }
+
+    button.signin-btn{
+        
+        padding: 10px 30px;
+        background: linear-gradient(to right, #8b4af5, #fa7ad4);
+        margin-right: 30px;
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    div.intro-section{
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    .intro-section .imgs-div img:nth-child(3){
+        position: absolute;
+        width: 450px;
+        left: -400px;
+        z-index: -1;
+    }
+
+    
+    div.intro-section div.left-section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: 40px;
+       align-items: center;
+       text-align: center;
+    }
+    
+}
