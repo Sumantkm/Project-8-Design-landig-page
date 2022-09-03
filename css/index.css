@@ -30,27 +30,28 @@ nav{
 
 nav img{
     margin-left: 30px;
+    width: 120px;
 }
 
 nav div.nav-items{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 40px;
-    font-size: 25px;
+    gap: 30px;
+    font-size: 20px;
     color: #2f2f6b;
     cursor: pointer;
 }
 
 button.signin-btn{
-    width: 120px;
+    width: 110px;
     padding: 10px 0;
     background: linear-gradient(to right, #8b4af5, #fa7ad4);
     margin-right: 30px;
     border: none;
     border-radius: 20px;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     overflow: hidden;
 }
@@ -66,29 +67,29 @@ div.intro-section{
 div.intro-section div.left-section{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 40px;
    
 }
 
 div.intro-section div.left-section h1{
-    font-size: 120px;
+    font-size: 80px;
     color: #444497;
 }
 
 div.intro-section div.left-section h4{
-margin-top: 50px ;
-width: 400px;
-font-size: 20px;
-line-height: 35px;
-color: #7c7ca7;
+    margin-top: 40px ;
+    width: 400px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7c7ca7;
 }
 
 div.intro-section div.left-section button.learn-more-btn{
-    width: 300px;
+    width: 200px;
     margin-top: 50px;
-    padding: 20px 0;
-    font-size: 30px;
+    padding: 15px 0;
+    font-size: 18px;
     font-weight: 700;
     color: #fff;
     background: linear-gradient(to right, #8b4af5, #fa7ad4) ;
@@ -103,26 +104,26 @@ div.imgs-div{
 
 .intro-section .imgs-div img:nth-child(3){
     position: absolute;
-    width: 800px;
-    left: 0;
+    width: 550px;
+    right: 40px;
 }
 
 .intro-section .imgs-div img.vector-dot{
    position: absolute;
-   bottom: 0;
-   left: 15px;
-   width: 30px;
+   bottom: 18px;
+   left: -130px;
+   width: 20px;
 }
 
 .intro-section .imgs-div img.vector-img{
     position: absolute;
-    bottom: -130px;
-    width: 150px;
-    left: -80px;
+    bottom: -50px;
+    width: 80px;
+    left: -180px;
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 790px) {
     nav{
         display: flex;
         flex-direction: row;
@@ -144,7 +145,7 @@ div.imgs-div{
         border: none;
         border-radius: 20px;
         color: #fff;
-        font-size: 15px;
+        font-size: 12px;
         cursor: pointer;
     }
 
@@ -165,10 +166,43 @@ div.imgs-div{
     div.intro-section div.left-section{
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 40px;
         margin-left: 40px;
        align-items: center;
        text-align: center;
     }
+
+    div.intro-section div.left-section h1{
+        font-size: 60px;
+        color: #202022;
+    }
     
+    div.intro-section div.left-section h4{
+        margin-top: 30px ;
+        width: 400px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #0c0c0c;
+    }
+    
+    div.intro-section div.left-section button.learn-more-btn{
+        width: 200px;
+        margin-top: 50px;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        background: linear-gradient(to right, #8b4af5, #fa7ad4) ;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    
+    .intro-section .imgs-div img.vector-dot{
+        display: none;
+     }
+     
+     .intro-section .imgs-div img.vector-img{
+         display: none;
+     }
 }
